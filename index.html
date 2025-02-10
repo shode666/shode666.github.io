@@ -5,6 +5,12 @@
 <body>
 HELLO เวิร์ล
 <script>
+document.addEventListener("visibilitychange", function () {
+    if (document.hidden) {
+        console.log("Possible screen recording attempt (user left the page)");
+        document.body.style.filter = "blur(10px)"; // Blur content
+    }
+});
 </script>
 </body>
 </html>
