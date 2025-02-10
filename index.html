@@ -12,6 +12,12 @@ document.addEventListener("visibilitychange", function () {
         document.body.style.filter = "blur(80px)"; // Blur content
     }
 });
+window.onfocus(function() {
+	document.body.style.filter = "none";
+});
+window.onblur(function() {
+	document.body.style.filter = "blur(80px)";
+});
 </script>
 </body>
 </html>
