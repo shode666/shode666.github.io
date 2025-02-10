@@ -6,6 +6,7 @@
 HELLO เวิร์ล 1234
 <script>
 document.addEventListener("visibilitychange", function () {
+	console.log("Fire visibility change");
     if (document.hidden) {
         console.log("Possible screen recording attempt (user left the page)");
         document.body.style.filter = "blur(10px)"; // Blur content
